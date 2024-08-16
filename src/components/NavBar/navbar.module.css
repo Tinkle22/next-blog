@@ -1,0 +1,65 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+.logo{
+    flex: 1;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+.logo p{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.links{
+    flex: 1;
+    display: flex;
+    gap: 20px;
+}
+
+.hamburger{
+   display: none; 
+   margin-right: 15px;
+   margin-left: 15px;
+}
+
+@media screen and (max-width: 1200px) {
+    .links{
+        font-size: 18px;
+        gap: 15px
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .logo{
+      text-align: left;
+    }
+    .logo p{
+      text-align: left;
+    }
+}
+
+@media screen and (max-width: 770px) {
+
+    .logo p{
+      text-align: left;
+      font-size: 18px;
+    }
+
+    .links{
+        display: none;
+    }
+
+    .hamburger{
+        display: flex;
+    }
+}
+

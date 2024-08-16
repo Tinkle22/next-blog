@@ -1,0 +1,68 @@
+.container{
+ width: 100%;
+ margin-bottom: 30px;
+}
+
+.title{
+    margin: 50px 0px;
+}
+
+.categories{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.category{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-transform: capitalize;
+    width: 200px;
+    height: 70px;
+    border-radius: 10px;
+}
+
+.category.news{
+    background-color: #57c4ff31;
+}
+
+.category.insights{
+    background-color: #57ffd531;
+}
+
+.category.articles{
+    background-color: #57ffab31;
+}
+
+.category.tips{
+    background-color: #6257ff31;
+}
+
+.image{
+     border-radius: 50%;
+}
+
+@media screen and (max-width: 750px) {
+    .category{
+        width: 250px;
+    }
+}
+@media screen and (max-width: 640px) {
+    .category{
+        width: 170px;
+    }
+}
+@media screen and (max-width: 450px) {
+    .categories{
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .category{
+        width: 90%;
+    }
+}
