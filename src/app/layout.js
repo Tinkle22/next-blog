@@ -1,9 +1,8 @@
-import NavBar from '@/components/NavBar/NavBar'
+
 import './globals.css'
 import { Inter } from 'next/font/google'
+import NavBar from '@/components/NavBar/NavBar'
 import Footer from '@/components/Footer/Footer'
-import { ThemeContextProvider } from '@/context/ThemeContext'
-import { ThemeProvider } from '@/providers/ThemeProvider'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -20,8 +19,8 @@ export default function RootLayout({ children }) {
           <div className='wrapper'>
             <NavBar/>
               {children}
-            <Footer/>
           </div>
+          <Footer/>
         </div>
       </body>
     </html>
