@@ -1,22 +1,23 @@
 import Link from 'next/link';
+import { blog_data } from '../../../Assets/assets';
 import styles from './card.module.css'
 import Image from 'next/image';
 
-export const Card = () => {
+export const Card = ({title, image, category, author, id}) => {
   return (
     <>
-      <Link href="/" className={styles.card}>
+      <Link href={`/blog/${id}`} className={styles.card}>
         <div className={styles.imageContainer}>
-          {/* <Image src="/travel.png" alt="" fill className={styles.image}/> */}
+          <Image src={image} alt="" width={400} height={400} className={styles.image}/>
         </div>
         <div className={styles.category}>
-            <h5 className={styles.tag}>insights</h5>
+            <h5 className={styles.tag}>{category}</h5>
         </div>
         <div className={styles.title}>
-            <p>Making a working strategy </p>
+            <p>{title}</p>
         </div>
         <div className={styles.date}>
-            <p>2122 22k3</p>
+            <p>{author}</p>
         </div>
       </Link>
     </>
