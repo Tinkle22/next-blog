@@ -1,0 +1,58 @@
+.blogForm {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .editorContainer {
+    margin-bottom: 20px;
+  }
+
+  .editorContainer :global(.ql-container) {
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    background: #fefcfc;
+  }
+  
+  .editorContainer :global(.ql-snow.ql-toolbar) {
+    display: block;
+    background: bisque;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+  }
+  
+  .editorContainer :global(.ql-editor) {
+    min-height: 5em;
+  }
+
+  .container{
+    border-radius: 10px;
+  }
+  
+  .submitBtn {
+    background-color: #000000;
+    color: white;
+    align-self: center;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .submitBtn:hover {
+    background-color: bisque;
+    color: #000000;
+  }
+
+.textInput{
+    width: 800px;
+    height: 50px;
+    margin: 10px 0px;
+    border-radius: 8px;
+    border-width: 0.1px;
+    padding: 0px 20px;
+}
+  

@@ -1,0 +1,101 @@
+.container{
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.userProfileContainer{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.box{
+    height: 90%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.boxContainerOne{
+    width: 100%;
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.boxContainerTwo{
+     width: 100%;
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.boxCard{
+    height: 45%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card{
+    background-color: bisque;
+    width: 220px;
+    height: 130px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card p{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.boxCardLeft{
+    width: 60%;
+    background-color: bisque;
+    height: 100%;
+}
+
+.boxCardRight{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.latestPostHeader{
+    width: 80%;
+    height: 50px;
+    border-radius: 10px;
+    background-color: bisque;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.latestPostHeader p{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.posts{
+    margin-top: 10px;
+    height: 200px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
